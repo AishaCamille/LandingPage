@@ -5,11 +5,19 @@
         </h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima maiores ipsam aspernatur, dicta ducimus qui dolore porro quod voluptatum. Quo, sapiente itaque quisquam ipsa mollitia accusamus reprehenderit officiis repellendus fugit ullam numquam soluta illo quae qui culpa odit aliquam aut dolore cupiditate blanditiis dolorum possimus excepturi. Hic provident neque veniam.</p>
     </div>
-    <form>
+    <form [formGroup]="newsletterForm">
         <label for="name">Name</label>
-        <input id="name"/>
+        <input id="name" formControlName="name" />
         <label for="email">Email</label>
-        <input id="email"/>
-        <app-btn-primary btn-text="se inscreva" variant="secondary"></app-btn-primary>
+        <input id="email" formControlName="email" />
+        <app-btn-primary 
+            btn-text="se inscreva" 
+            variant="secondary"
+            (submit)="onSubmit()"
+            [disabled]="newsletterForm"
+            >
+            
+
+        </app-btn-primary>
     </form>
 </section>
