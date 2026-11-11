@@ -1,5 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Home } from './components/home/home';//sem esse import nada funcionava no site
+
 
 @Component({
   imports: [RouterOutlet],
