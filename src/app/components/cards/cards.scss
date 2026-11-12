@@ -1,0 +1,49 @@
+@import "../../../color-variables.scss";
+
+.cardFotos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 70px auto;
+    padding: 0 90px;
+    box-sizing: border-box;
+
+
+    h3{
+        color:$primary-text;
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 12px;
+    }
+    p{
+        color:$secondary-text;
+        font-weight: 400;
+        font-size: 13px;
+        margin-top: 12px;
+    }
+}
+.img1, .img2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    flex: 1 1 auto; //crescer de acorod com a tela mas
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+.textCard1, .textCard2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 500px;
+    flex-direction: column;
+    
+}

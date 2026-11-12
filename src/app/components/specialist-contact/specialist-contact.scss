@@ -1,0 +1,13 @@
+@import "../../../color-variables.scss";
+
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    text-align: center;
+    h1{
+        color: $primary-text;
+    }
+}
